@@ -1,0 +1,15 @@
+---
+import { contact } from '../lib/contact';
+---
+<footer class="border-t border-brand-100 mt-24">
+  <div class="max-w-5xl mx-auto px-6 py-10 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-brand-900/60">
+    <span class="flex items-center gap-2 text-center md:text-left">
+      © {new Date().getFullYear()} {contact.naam} · {contact.straat}, {contact.plaats}
+    </span>
+    <div class="flex gap-6">
+      <a href="/over-de-praktijk" class="hover:text-brand-900 transition-colors">Over de praktijk</a>
+      <a href={contact.telefoonTel} class="hover:text-brand-900 transition-colors">{contact.telefoonDisplay}</a>
+      <a href={contact.telefoonWhatsapp} target="_blank" rel="noopener noreferrer" class="hover:text-brand-900 transition-colors">WhatsApp</a>
+    </div>
+  </div>
+</footer>
