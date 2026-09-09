@@ -9,22 +9,21 @@ diensten:
     tekst: 'Dit is een stevige massage ter bevordering van de bloedsomloop waardoor afvalstoffen worden verwijderd uit de spieren. Het bindweefsel rondom de gespannen spieren wordt losgemaakt waardoor pijn kan verdwijnen.'
 tarieven_titel: 'Tarieven per 1 januari 2026'
 tarieven:
-  - duur: '25 min. massage + 5 min. aankleden'
+  - duur: '25 min. massage'
     prijs: '€ 50,-'
-  - duur: '50 min. massage + 10 min. naliggen / aankleden'
+  - duur: '50 min. massage'
     prijs: '€ 70,-'
-  - duur: '60 min. massage + 15 min. naliggen / aankleden'
+  - duur: '60 min. massage'
     prijs: '€ 80,-'
-  - duur: '75 min. massage + 15 min. naliggen / aankleden'
+  - duur: '75 min. massage'
     prijs: '€ 97,50'
-  - duur: '90 min. massage + 15 min. naliggen / aankleden'
+  - duur: '90 min. massage'
     prijs: '€ 115,-'
-  - duur: '120 min. massage + 20 min. naliggen / douchen / aankleden'
+  - duur: '120 min. massage'
     prijs: '€ 150,-'
 cadeaubon_tekst: Ook te koop als cadeaubon! U komt uiteraard schoon en er is mogelijkheid tot douchen na afloop.
 afspraken_titel: Afspraken
 afspraken_tekst: 'U kunt een afspraak maken door te bellen naar 06-235 44 624. Bij geen gehoor, graag duidelijk uw naam en telefoonnummer inspreken en u wordt zo spoedig mogelijk teruggebeld. Of u stuurt een bericht via sms, WhatsApp of Telegram.'
 bereikbaarheid_titel: Bereikbaarheid
 bereikbaarheid_tekst: 'Scheldestraat 19, Lelystad. U kunt gebruikmaken van de parkeergelegenheid voor de deur.'
-foto: /images/licht-ananda-massage.jpg
 ---

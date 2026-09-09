@@ -14,27 +14,22 @@ const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComp
 >
 
   <!-- Hero -->
-  <section class="max-w-5xl mx-auto px-6 pt-16 pb-16 grid grid-cols-1 md:grid-cols-5 gap-12 items-center">
-    <div class="md:col-span-3">
-      <p class="text-sm font-medium text-brand-500 uppercase tracking-widest mb-4">Massagepraktijk in Lelystad</p>
-      <h1 class="text-4xl md:text-5xl font-display text-brand-950 leading-tight mb-4">
-        {c.hero_titel}
-      </h1>
-      <p class="text-xl text-sage-600 font-display tracking-wide mb-6">{c.hero_subtitel}</p>
-      <p class="text-lg text-brand-900/70 leading-relaxed mb-10">
-        {c.hero_tekst}
-      </p>
-      <div class="flex flex-col sm:flex-row gap-3">
-        <a href={contact.telefoonTel} class="inline-flex items-center justify-center px-6 py-3 bg-brand-600 text-white rounded-full font-medium hover:bg-brand-700 transition-colors">
-          Bel direct: {contact.telefoonDisplay}
-        </a>
-        <a href={contact.telefoonWhatsapp} target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-6 py-3 border border-brand-200 text-brand-900 rounded-full font-medium hover:border-brand-400 transition-colors">
-          Stuur een WhatsApp
-        </a>
-      </div>
-    </div>
-    <div class="md:col-span-2">
-      <img src={c.foto} alt="" class="w-full max-w-[220px] mx-auto rounded-2xl shadow-sm" />
+  <section class="max-w-3xl mx-auto px-6 pt-16 pb-16">
+    <p class="text-sm font-medium text-brand-500 uppercase tracking-widest mb-4">Massagepraktijk in Lelystad</p>
+    <h1 class="text-4xl md:text-5xl font-display text-brand-950 leading-tight mb-4">
+      {c.hero_titel}
+    </h1>
+    <p class="text-xl text-sage-600 font-display tracking-wide mb-6">{c.hero_subtitel}</p>
+    <p class="text-lg text-brand-950 leading-relaxed mb-10">
+      {c.hero_tekst}
+    </p>
+    <div class="flex flex-col sm:flex-row gap-3">
+      <a href={contact.telefoonTel} class="inline-flex items-center justify-center px-6 py-3 bg-brand-600 text-white rounded-full font-medium hover:bg-brand-700 transition-colors">
+        Bel direct: {contact.telefoonDisplay}
+      </a>
+      <a href={contact.telefoonWhatsapp} target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-6 py-3 border border-brand-200 text-brand-900 rounded-full font-medium hover:border-brand-400 transition-colors">
+        Stuur een WhatsApp
+      </a>
     </div>
   </section>
 
@@ -43,12 +38,12 @@ const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComp
   <!-- Diensten -->
   <section class="max-w-5xl mx-auto px-6 py-20">
     <h2 class="text-2xl font-display text-brand-950 mb-2">Wat ik voor je kan doen</h2>
-    <p class="text-brand-900/60 mb-12">Twee vormen van massage, allebei gericht op écht tot rust komen.</p>
+    <p class="text-brand-950 mb-12">Twee vormen van massage, allebei gericht op écht tot rust komen.</p>
     <div class="grid sm:grid-cols-2 gap-6">
       {c.diensten.map((dienst: { titel: string; tekst: string }) => (
         <div class="p-8 bg-white border border-brand-100 rounded-2xl">
           <h3 class="font-display text-lg text-brand-950 mb-3">{dienst.titel}</h3>
-          <p class="text-brand-900/60 text-sm leading-relaxed">{dienst.tekst}</p>
+          <p class="text-brand-950 text-base leading-relaxed">{dienst.tekst}</p>
         </div>
       ))}
     </div>
@@ -58,12 +53,12 @@ const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComp
   <section class="bg-white border-y border-brand-100">
     <div class="max-w-5xl mx-auto px-6 py-20">
       <h2 class="text-2xl font-display text-brand-950 mb-2">{c.tarieven_titel}</h2>
-      <p class="text-brand-900/60 mb-10">{c.cadeaubon_tekst}</p>
-      <div class="max-w-2xl divide-y divide-brand-100 border border-brand-100 rounded-2xl overflow-hidden">
+      <p class="text-brand-950 mb-10">{c.cadeaubon_tekst}</p>
+      <div class="max-w-md divide-y divide-brand-100 border border-brand-100 rounded-2xl overflow-hidden">
         {c.tarieven.map((tarief: { duur: string; prijs: string }) => (
-          <div class="flex items-center justify-between gap-6 px-6 py-4 bg-[#FDFAF7]">
-            <span class="text-sm text-brand-900/70">{tarief.duur}</span>
-            <span class="text-sm font-medium px-3 py-1 rounded-full bg-brand-50 text-brand-600 shrink-0">{tarief.prijs}</span>
+          <div class="flex items-center justify-between gap-6 px-5 py-2 bg-[#FDFAF7]">
+            <span class="text-base text-brand-950">{tarief.duur}</span>
+            <span class="text-base font-semibold px-2.5 py-0.5 rounded-full bg-brand-50 text-brand-700 shrink-0">{tarief.prijs}</span>
           </div>
         ))}
       </div>
@@ -75,7 +70,7 @@ const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComp
     <div class="grid md:grid-cols-2 gap-12">
       <div>
         <h2 class="text-xl font-display text-brand-950 mb-3">{c.afspraken_titel}</h2>
-        <p class="text-brand-900/60 text-sm leading-relaxed mb-6">{c.afspraken_tekst}</p>
+        <p class="text-brand-950 text-base leading-relaxed mb-6">{c.afspraken_tekst}</p>
         <div class="flex flex-wrap gap-3">
           <a href={contact.telefoonTel} class="inline-flex items-center gap-2 text-sm px-4 py-2 bg-brand-600 text-white rounded-full hover:bg-brand-700 transition-colors">
             Bellen
@@ -90,7 +85,7 @@ const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComp
       </div>
       <div>
         <h2 class="text-xl font-display text-brand-950 mb-3">{c.bereikbaarheid_titel}</h2>
-        <p class="text-brand-900/60 text-sm leading-relaxed mb-6">{c.bereikbaarheid_tekst}</p>
+        <p class="text-brand-950 text-base leading-relaxed mb-6">{c.bereikbaarheid_tekst}</p>
         <a href={mapsUrl} target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-sm font-medium text-brand-600 hover:text-brand-700 transition-colors">
           Route plannen
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-3.5 h-3.5">

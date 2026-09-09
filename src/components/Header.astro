@@ -24,7 +24,7 @@ const currentPath = Astro.url.pathname;
         class={`text-sm transition-colors ${
           currentPath === '/over-de-praktijk'
             ? 'text-brand-600 font-medium'
-            : 'text-brand-900/70 hover:text-brand-900'
+            : 'text-brand-950 hover:text-brand-600'
         }`}
       >
         Over de praktijk
@@ -76,13 +76,13 @@ const currentPath = Astro.url.pathname;
           class={`px-3 py-2.5 rounded-lg text-sm transition-colors ${
             currentPath === link.href
               ? 'text-brand-600 font-medium bg-brand-50'
-              : 'text-brand-900/70 hover:text-brand-900 hover:bg-brand-50'
+              : 'text-brand-950 hover:text-brand-600 hover:bg-brand-50'
           }`}
         >
           {link.label}
         </a>
       ))}
-      <a href={contact.telefoonWhatsapp} target="_blank" rel="noopener noreferrer" class="px-3 py-2.5 rounded-lg text-sm text-brand-900/70 hover:text-brand-900 hover:bg-brand-50 transition-colors">
+      <a href={contact.telefoonWhatsapp} target="_blank" rel="noopener noreferrer" class="px-3 py-2.5 rounded-lg text-sm text-brand-950 hover:text-brand-600 hover:bg-brand-50 transition-colors">
         WhatsApp
       </a>
     </div>
