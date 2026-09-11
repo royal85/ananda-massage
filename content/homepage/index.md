@@ -1,7 +1,5 @@
 ---
 hero_titel: Ontspannende en helende massage
-hero_subtitel: bij Ananda Massage in Lelystad
-hero_tekst: 'Massage is een uitstekende manier om tot rust en tot jezelf te komen. Door het volgen van de handen van de massagetherapeut kom je terug in je lichaam en in een diepere laag van jezelf.'
 diensten:
   - titel: Ontspannende massage
     tekst: 'Massage is een uitstekende manier om tot rust en tot jezelf te komen. Door het volgen van de handen van de massagetherapeut kom je terug in je lichaam en in een diepere laag van jezelf. Hierdoor voel je je ontspannen en zijn je gedachten rustiger geworden.'
@@ -21,9 +19,11 @@ tarieven:
     prijs: '€ 115,-'
   - duur: '120 min. massage'
     prijs: '€ 150,-'
-cadeaubon_tekst: Ook te koop als cadeaubon! U komt uiteraard schoon en er is mogelijkheid tot douchen na afloop.
+cadeaubon_tekst_1: Ook te koop als cadeaubon!
+cadeaubon_tekst_2: U komt uiteraard schoon en er is mogelijkheid tot douchen na afloop.
 afspraken_titel: Afspraken
-afspraken_tekst: 'U kunt een afspraak maken door te bellen naar 06-235 44 624. Bij geen gehoor, graag duidelijk uw naam en telefoonnummer inspreken en u wordt zo spoedig mogelijk teruggebeld. Of u stuurt een bericht via sms, WhatsApp of Telegram.'
+afspraken_tekst: 'U kunt een afspraak maken door te bellen naar 06-235 44 624. Bij geen gehoor, graag duidelijk uw naam en telefoonnummer inspreken, u wordt dan zo spoedig mogelijk teruggebeld. Of u stuurt een bericht via sms, WhatsApp of Telegram.'
 bereikbaarheid_titel: Bereikbaarheid
-bereikbaarheid_tekst: 'Scheldestraat 19, Lelystad. U kunt gebruikmaken van de parkeergelegenheid voor de deur.'
+bereikbaarheid_tekst_1: 'Scheldestraat 19, 8226LW Lelystad.'
+bereikbaarheid_tekst_2: 'U kunt gebruikmaken van de parkeergelegenheid voor de deur.'
 ---

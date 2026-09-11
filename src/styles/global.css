@@ -1,23 +1,21 @@
 @import "tailwindcss";
 
 @theme {
-  /* Warm terracotta/klei — primaire merkkleur, past bij massage/wellness */
-  --color-brand-50: #FBF5F1;
-  --color-brand-100: #F5E6DC;
-  --color-brand-200: #E8C7B0;
-  --color-brand-300: #D9A17E;
-  --color-brand-400: #C97D54;
-  --color-brand-500: #B5613A;
-  --color-brand-600: #97492C;
-  --color-brand-700: #793A24;
-  --color-brand-800: #5C2C1C;
-  --color-brand-900: #3D1D13;
-  --color-brand-950: #241109;
-
-  /* Zachte salie-groen — rust/natuur accent, spaarzaam gebruikt */
-  --color-sage-400: #A9B99C;
-  --color-sage-500: #8CA07C;
-  --color-sage-600: #708460;
+  /* Merkkleur waterlelie-oranje (RGB 255, 94, 0 = brand-500). Lichtere
+     tinten (50-400) zijn voor achtergronden/oppervlaktes; 700+ pas donker
+     genoeg voor tekst en knoppen met voldoende contrast (WCAG AA), zodat
+     het ook voor oudere bezoekers goed leesbaar blijft. */
+  --color-brand-50: #FFF5F0;
+  --color-brand-100: #FFE8DB;
+  --color-brand-200: #FDCFB4;
+  --color-brand-300: #FFAB7A;
+  --color-brand-400: #FF843D;
+  --color-brand-500: #FF5E00;
+  --color-brand-600: #D64F00;
+  --color-brand-700: #A94104;
+  --color-brand-800: #833407;
+  --color-brand-900: #5E2708;
+  --color-brand-950: #371806;
 
   --font-serif: "Fraunces", ui-serif, Georgia, serif;
   --font-sans: "Inter", system-ui, sans-serif;
@@ -28,7 +26,7 @@
     scroll-behavior: smooth;
   }
   body {
-    background-color: #FDFAF7;
+    background-color: var(--color-brand-50);
     color: var(--color-brand-950);
     -webkit-font-smoothing: antialiased;
     font-family: var(--font-sans);

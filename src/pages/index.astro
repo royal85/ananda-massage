@@ -14,31 +14,16 @@ const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComp
 >
 
   <!-- Hero -->
-  <section class="max-w-3xl mx-auto px-6 pt-16 pb-16">
-    <p class="text-sm font-medium text-brand-500 uppercase tracking-widest mb-4">Massagepraktijk in Lelystad</p>
-    <h1 class="text-4xl md:text-5xl font-display text-brand-950 leading-tight mb-4">
+  <section class="max-w-5xl mx-auto px-6 pt-16 pb-10">
+    <h1 class="text-2xl md:text-3xl font-display text-brand-600 tracking-wide mb-4">Ananda Massagepraktijk in Lelystad</h1>
+    <h2 class="text-4xl md:text-5xl font-display text-brand-950 leading-tight">
       {c.hero_titel}
-    </h1>
-    <p class="text-xl text-sage-600 font-display tracking-wide mb-6">{c.hero_subtitel}</p>
-    <p class="text-lg text-brand-950 leading-relaxed mb-10">
-      {c.hero_tekst}
-    </p>
-    <div class="flex flex-col sm:flex-row gap-3">
-      <a href={contact.telefoonTel} class="inline-flex items-center justify-center px-6 py-3 bg-brand-600 text-white rounded-full font-medium hover:bg-brand-700 transition-colors">
-        Bel direct: {contact.telefoonDisplay}
-      </a>
-      <a href={contact.telefoonWhatsapp} target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-6 py-3 border border-brand-200 text-brand-900 rounded-full font-medium hover:border-brand-400 transition-colors">
-        Stuur een WhatsApp
-      </a>
-    </div>
+    </h2>
   </section>
 
-  <div class="max-w-5xl mx-auto px-6"><hr class="border-brand-100" /></div>
-
   <!-- Diensten -->
-  <section class="max-w-5xl mx-auto px-6 py-20">
-    <h2 class="text-2xl font-display text-brand-950 mb-2">Wat ik voor je kan doen</h2>
-    <p class="text-brand-950 mb-12">Twee vormen van massage, allebei gericht op écht tot rust komen.</p>
+  <section class="max-w-5xl mx-auto px-6 pt-10 pb-10">
+    <h2 class="text-2xl font-display text-brand-950 mb-12">U kunt kiezen uit:</h2>
     <div class="grid sm:grid-cols-2 gap-6">
       {c.diensten.map((dienst: { titel: string; tekst: string }) => (
         <div class="p-8 bg-white border border-brand-100 rounded-2xl">
@@ -52,15 +37,18 @@ const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComp
   <!-- Tarieven -->
   <section class="bg-white border-y border-brand-100">
     <div class="max-w-5xl mx-auto px-6 py-20">
-      <h2 class="text-2xl font-display text-brand-950 mb-2">{c.tarieven_titel}</h2>
-      <p class="text-brand-950 mb-10">{c.cadeaubon_tekst}</p>
-      <div class="max-w-md divide-y divide-brand-100 border border-brand-100 rounded-2xl overflow-hidden">
+      <h2 class="text-2xl font-display text-brand-950 mb-6">{c.tarieven_titel}</h2>
+      <div class="max-w-xs divide-y divide-brand-100 border border-brand-100 rounded-2xl overflow-hidden">
         {c.tarieven.map((tarief: { duur: string; prijs: string }) => (
-          <div class="flex items-center justify-between gap-6 px-5 py-2 bg-[#FDFAF7]">
+          <div class="flex items-center gap-4 px-5 py-2 bg-brand-50">
             <span class="text-base text-brand-950">{tarief.duur}</span>
             <span class="text-base font-semibold px-2.5 py-0.5 rounded-full bg-brand-50 text-brand-700 shrink-0">{tarief.prijs}</span>
           </div>
         ))}
+      </div>
+      <div class="mt-10 space-y-4 text-brand-950">
+        <p>{c.cadeaubon_tekst_1}</p>
+        <p>{c.cadeaubon_tekst_2}</p>
       </div>
     </div>
   </section>
@@ -72,7 +60,7 @@ const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComp
         <h2 class="text-xl font-display text-brand-950 mb-3">{c.afspraken_titel}</h2>
         <p class="text-brand-950 text-base leading-relaxed mb-6">{c.afspraken_tekst}</p>
         <div class="flex flex-wrap gap-3">
-          <a href={contact.telefoonTel} class="inline-flex items-center gap-2 text-sm px-4 py-2 bg-brand-600 text-white rounded-full hover:bg-brand-700 transition-colors">
+          <a href={contact.telefoonTel} class="inline-flex items-center gap-2 text-sm px-4 py-2 bg-brand-500 text-white font-medium rounded-full hover:bg-brand-600 transition-colors">
             Bellen
           </a>
           <a href={contact.telefoonSms} class="inline-flex items-center gap-2 text-sm px-4 py-2 border border-brand-200 text-brand-900 rounded-full hover:border-brand-400 transition-colors">
@@ -85,8 +73,11 @@ const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComp
       </div>
       <div>
         <h2 class="text-xl font-display text-brand-950 mb-3">{c.bereikbaarheid_titel}</h2>
-        <p class="text-brand-950 text-base leading-relaxed mb-6">{c.bereikbaarheid_tekst}</p>
-        <a href={mapsUrl} target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-sm font-medium text-brand-600 hover:text-brand-700 transition-colors">
+        <div class="text-brand-950 text-base leading-relaxed mb-6 space-y-4">
+          <p>{c.bereikbaarheid_tekst_1}</p>
+          <p>{c.bereikbaarheid_tekst_2}</p>
+        </div>
+        <a href={mapsUrl} target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-sm font-medium text-brand-700 hover:text-brand-800 transition-colors">
           Route plannen
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-3.5 h-3.5">
             <path fill-rule="evenodd" d="M8.22 5.22a.75.75 0 011.06 0l4.25 4.25a.75.75 0 010 1.06l-4.25 4.25a.75.75 0 01-1.06-1.06L11.94 10 8.22 6.28a.75.75 0 010-1.06z" clip-rule="evenodd" />
