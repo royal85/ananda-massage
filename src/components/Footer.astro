@@ -1,7 +1,7 @@
 ---
 import { contact } from '../lib/contact';
 ---
-<footer class="relative overflow-hidden bg-brand-600 mt-24">
+<footer class="relative overflow-hidden bg-brand-500 mt-24">
   <svg class="absolute inset-0 w-full h-full" viewBox="0 0 1200 200" preserveAspectRatio="none" aria-hidden="true">
     <g fill="none" stroke="white" stroke-opacity="0.15" stroke-width="1.5">
       <circle cx="120" cy="230" r="90" />
@@ -14,12 +14,11 @@ import { contact } from '../lib/contact';
   </svg>
   <div class="relative max-w-5xl mx-auto px-6 py-10 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-white">
     <span class="flex items-center gap-2 text-center md:text-left">
-      © {new Date().getFullYear()} {contact.naam} · {contact.straat}, {contact.plaats}
+      © 2012 {contact.naam} · {contact.straat}, {contact.postcode} {contact.plaats}
     </span>
     <div class="flex gap-6">
+      <a href="/" class="underline underline-offset-4 decoration-white/40 hover:decoration-white transition-colors">Home</a>
       <a href="/over-de-praktijk" class="underline underline-offset-4 decoration-white/40 hover:decoration-white transition-colors">Over de praktijk</a>
-      <a href={contact.telefoonTel} class="underline underline-offset-4 decoration-white/40 hover:decoration-white transition-colors">{contact.telefoonDisplay}</a>
-      <a href={contact.telefoonWhatsapp} target="_blank" rel="noopener noreferrer" class="underline underline-offset-4 decoration-white/40 hover:decoration-white transition-colors">WhatsApp</a>
     </div>
   </div>
 </footer>
