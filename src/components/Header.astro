@@ -3,6 +3,7 @@ import { contact } from '../lib/contact';
 
 const links = [
   { href: '/', label: 'Home' },
+  { href: '/#tarieven', label: 'Tarieven' },
   { href: '/over-de-praktijk', label: 'Over de praktijk' },
 ];
 const currentPath = Astro.url.pathname;
@@ -32,6 +33,9 @@ const currentPath = Astro.url.pathname;
         }`}
       >
         Home
+      </a>
+      <a href="/#tarieven" class="text-sm text-brand-950 hover:text-brand-700 transition-colors">
+        Tarieven
       </a>
       <a
         href="/over-de-praktijk"

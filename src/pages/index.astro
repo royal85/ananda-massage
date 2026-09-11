@@ -35,14 +35,14 @@ const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComp
   </section>
 
   <!-- Tarieven -->
-  <section class="bg-white border-y border-brand-100">
+  <section id="tarieven" class="bg-white border-y border-brand-100 scroll-mt-20">
     <div class="max-w-5xl mx-auto px-6 py-20">
       <h2 class="text-2xl font-display text-brand-950 mb-6">{c.tarieven_titel}</h2>
       <div class="max-w-xs divide-y divide-brand-100 border border-brand-100 rounded-2xl overflow-hidden">
         {c.tarieven.map((tarief: { duur: string; prijs: string }) => (
           <div class="flex items-center gap-4 px-5 py-2 bg-brand-50">
             <span class="text-base text-brand-950">{tarief.duur}</span>
-            <span class="text-base font-semibold px-2.5 py-0.5 rounded-full bg-brand-50 text-brand-700 shrink-0">{tarief.prijs}</span>
+            <span class="text-base font-semibold px-2.5 py-0.5 rounded-full bg-brand-50 text-brand-600 shrink-0">{tarief.prijs}</span>
           </div>
         ))}
       </div>
