@@ -26,23 +26,19 @@ const currentPath = Astro.url.pathname;
     <nav class="hidden md:flex items-center gap-8">
       <a
         href="/"
-        class={`text-sm transition-colors ${
-          currentPath === '/'
-            ? 'text-brand-700 font-medium'
-            : 'text-brand-950 hover:text-brand-700'
+        class={`text-sm text-black underline decoration-2 underline-offset-4 hover:decoration-brand-500 transition-colors ${
+          currentPath === '/' ? 'font-medium decoration-brand-500' : 'decoration-transparent'
         }`}
       >
         Home
       </a>
-      <a href="/#tarieven" class="text-sm text-brand-950 hover:text-brand-700 transition-colors">
+      <a href="/#tarieven" class="text-sm text-black underline decoration-2 decoration-transparent underline-offset-4 hover:decoration-brand-500 transition-colors">
         Tarieven
       </a>
       <a
         href="/over-de-praktijk"
-        class={`text-sm transition-colors ${
-          currentPath === '/over-de-praktijk'
-            ? 'text-brand-700 font-medium'
-            : 'text-brand-950 hover:text-brand-700'
+        class={`text-sm text-black underline decoration-2 underline-offset-4 hover:decoration-brand-500 transition-colors ${
+          currentPath === '/over-de-praktijk' ? 'font-medium decoration-brand-500' : 'decoration-transparent'
         }`}
       >
         Over de praktijk
@@ -91,16 +87,14 @@ const currentPath = Astro.url.pathname;
       {links.map(link => (
         <a
           href={link.href}
-          class={`px-3 py-2.5 rounded-lg text-sm transition-colors ${
-            currentPath === link.href
-              ? 'text-brand-700 font-medium bg-brand-50'
-              : 'text-brand-950 hover:text-brand-700 hover:bg-brand-50'
+          class={`px-3 py-2.5 rounded-lg text-sm text-black underline decoration-2 underline-offset-4 hover:decoration-brand-500 hover:bg-brand-50 transition-colors ${
+            currentPath === link.href ? 'font-medium decoration-brand-500 bg-brand-50' : 'decoration-transparent'
           }`}
         >
           {link.label}
         </a>
       ))}
-      <a href={contact.telefoonWhatsapp} target="_blank" rel="noopener noreferrer" class="px-3 py-2.5 rounded-lg text-sm text-brand-950 hover:text-brand-700 hover:bg-brand-50 transition-colors">
+      <a href={contact.telefoonWhatsapp} target="_blank" rel="noopener noreferrer" class="px-3 py-2.5 rounded-lg text-sm text-black underline decoration-2 decoration-transparent underline-offset-4 hover:decoration-brand-500 hover:bg-brand-50 transition-colors">
         WhatsApp
       </a>
     </div>
